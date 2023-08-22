@@ -1,0 +1,32 @@
+.container {
+  background: var(--background-tema-intro);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-raro {
+  height: 400px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title-page {
+  color: var(--background-cor-texto-claro);
+  font-size: 5rem;
+}
+
+@media (max-width: 622px) {
+  .logo-raro {
+    max-width: 100vw;
+  }
+
+  .title-page {
+    font-size: 3rem;
+  }
+}

@@ -17,8 +17,7 @@ export const postRegisterRequest = async ({
 
     const { status } = response;
 
-    return status
-
+    return status;
   } catch (error) {
     console.error('Erro ao enviar formulário:', error);
   }
