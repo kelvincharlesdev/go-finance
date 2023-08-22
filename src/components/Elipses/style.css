@@ -1,0 +1,13 @@
+.img-ellipse {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 557px;
+  max-height: 557px;
+}
+
+@media (max-width: 998px) {
+  .img-ellipse {
+    display: none;
+  }
+}
