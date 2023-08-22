@@ -22,6 +22,7 @@ export const FormLogin = () => {
 
       navigate('/loggedUser');
     } catch (error) {
+      alert('Email ou senha inválida ou sem cadastro');
       console.error('Erro ao enviar formulário:', error);
     }
   };
@@ -42,7 +43,7 @@ export const FormLogin = () => {
       validationSchema={schemaValidationLogin}
       validateOnChange={false}
     >
-      {({ errors, touched, isSubmitting, isValid }) => (
+      {({ errors, touched, isSubmitting }) => (
         <Form className="form-login">
           <div className="info-form">
             <h2 className="title-login">Login</h2>
@@ -78,11 +79,7 @@ export const FormLogin = () => {
             <ErrorMessage message={touched.password && errors.password} />
           </div>
           <div className="form-submit">
-            <button
-              className="btn-form"
-              type="submit"
-              disabled={!isValid || isSubmitting}
-            >
+            <button className="btn-form" type="submit" disabled={isSubmitting}>
               Entrar
             </button>
 

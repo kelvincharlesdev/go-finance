@@ -1,10 +1,7 @@
 import { FormLoginTypes } from '../utils/structure';
 import { api } from './api';
 
-export const postLoginRequest = async ({
-  email,
-  password
-}: FormLoginTypes) => {
+export const postLoginRequest = async ({ email, password }: FormLoginTypes) => {
   try {
     const response = await api.post(`/auth/login`, {
       email,
@@ -28,6 +25,6 @@ export const authLogin = async (id: string, token: string) => {
     }
   };
   const response = await api.get(`/users/${id}`, config);
- 
-  return response.data
+
+  return response.data;
 };

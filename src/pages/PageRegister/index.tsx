@@ -1,13 +1,11 @@
-import { ContainerLeft } from "../../components/ContainerLeft" 
-import { ContainerRigthRegister } from "../../components/ContainerRightRegister"
-
-
+import { ContainerLeft } from '../../components/ContainerLeft';
+import { ContainerRigthRegister } from '../../components/ContainerRightRegister';
 
 export function PageRegister() {
-    return (
-     <main>
-        <ContainerLeft/>
-        <ContainerRigthRegister />
-     </main>
-    )
-  }
+  return (
+    <main>
+      <ContainerLeft />
+      <ContainerRigthRegister />
+    </main>
+  );
+}
