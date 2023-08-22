@@ -1,21 +1,20 @@
 export const errosMessages = {
     email: {
-        required: "Email obrigatorio",
+        required: "Email obrigatório",
         invalid: "Formato de email inválido"
     },
     password: {
-        required: "Senha Obrigatoria",
-        min: 'Sua senha precisa ter no  minimo 8 caracteres',
-        matchesInvalidUppercase: "insira uma letra maíuscula",
-        matchesInvalidCharacters: "insira uma caracterer especial"
+        required: "Senha obrigatória",
+        min: 'Sua senha precisa ter no  mínimo 8 caracteres',
+        matchesInvalidUppercase: "Insira uma letra maíuscula",
+        matchesInvalidCharacters: "Insira uma caracterer especial"
     },
     confirPassword: {
-        required: "Senha Obrigatoria",
-        invalid: "Campo deve ser igual ao de Senha",
+        required: "Senha obrigatória",
         ref: "As senhas devem corresponder"
     },
     name: {
-        required: 'Nome e Sobrenome obrigatorio',
+        required: 'Nome e sobrenome obrigatório',
 
     },
     checkbox: {
