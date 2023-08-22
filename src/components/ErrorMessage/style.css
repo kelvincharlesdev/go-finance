@@ -1,0 +1,8 @@
+.msg-error {
+  color: var(--color-msg-error);
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
